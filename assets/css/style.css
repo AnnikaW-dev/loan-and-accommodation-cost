@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+/*general styles*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*Generic prioj styles*/
+    color: black;
+}
+
 /*Header*/
 header {
     background-color: lightyellow;
@@ -12,9 +21,12 @@ header {
 /* Main Content*/ 
 main {
     background-color: aqua;
+    /*Make main element take up all space and push the fotter down*/
+    flex: 1 0 auto;
 }
 
 /*Footer*/
 footer {
     background-color: aliceblue;
 }
+
