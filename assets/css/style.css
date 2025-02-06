@@ -8,6 +8,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color:#eeebd3;
+    --secondary-color: #aa767c;
+    --button-color: #77b6ea;
+    --error-color: #ff6b6b;
+    --text-color: #0d1821;
+    --fill-color: lightgray;
+}
+
 /*general styles*/
 body {
     min-height: 100vh;
@@ -19,10 +28,20 @@ body {
 
 
 /*Header*/
-header {
+header { 
     background-color: lightyellow;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    text-align: center;
 }
 
+header a {
+    text-decoration: none;
+    color: inherit;
+}
 /* Main Content*/ 
 main {
     background-color: aqua;
