@@ -22,14 +22,15 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /*Generic prioj styles*/
-    color: black;
+    /*Generic proj styles*/
+    color: var(--text-color);
+    background-color: var(--primary-color);
 }
 
 
 /*Header*/
 header { 
-    background-color: lightyellow;
+    background-color: var(--secondary-color);
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -44,13 +45,13 @@ header a {
 }
 /* Main Content*/ 
 main {
-    background-color: aqua;
+    /*background-color: aqua;*/
     /*Make main element take up all space and push the fotter down*/
     flex: 1 0 auto;
 }
 
 /*Footer*/
 footer {
-    background-color: aliceblue;
+    background-color: var(--secondary-color);
 }
 
