@@ -29,12 +29,11 @@ body {
 
 /* Main Content*/ 
 main {
-    background-color: aqua;
+    background-color: var(--primary-color);
     /*Make main element take up all space and push the footer down*/
     flex: 1 0 auto;
 }
 .container1 {
-    
     width: 80%;
     margin: 240px auto;
     background-color: #fff;
@@ -49,23 +48,66 @@ main {
     text-align: center;
 }
 
-.container2 {display: grid;
+.container2 {
+    display: grid;
     display: flex;
     gap: 10px;
 }
 
-.item {
+.item { 
     flex: 1; /* Fördelar utrymmet jämnt */
     background: #fff;
     padding: 20px;
     text-align: center;
 }
-label {
-    width: 170px;
+
+.slidecontainer {
+    padding: 5px 5px;
+}
+
+lable {
+    text-align: start;
+    width: 130;
     height: 20;
 }
-.right {
 
+#output {
+    border: 1px solid var(--text-color);
+    align-items: end;
+}
+
+input [type="range"] {
+    flex: 2;
+    margin: 0 10px;
+    /*-webkit-appearance: none;*/
+    height: 8px;
+    background: #c1c1c1;
+    border-radius: 5px;
+    outline: none;
+} 
+ 
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+input[type="text"] {
+    width: 100px;
+    text-align: right;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #f9f9f9;
+}
+.calculate-btn {
+    padding: 5px;
+    margin: 10px;
 }
 
 

@@ -28,47 +28,72 @@
                     <div class="topLeft">
                         <h3>Your Loan Details</h3>
                     </div>
-                    <form action="#">
-                        <div class="loanDetails" id="purchase-amount">
-                            <label for="purchaseAmount">Purchase Amount</label>
-                            <input type="number" id="purchaseAmount">
-                        </div>
-                        <div class="loanDetails" id="down-payment">
-                            <label for="downPayment">Down Payment</label>
-                            <input type="number" id="downPayment">
-                        </div>
-                        <div class="loanDetails" id="interest-1">
-                            <label for="interest">Interest</label>
-                            <input type="number" id="interest">
-                        </div>
-                        <div class="loanDetails" id="amortizationPercent">
-                            <label for="amortizationPercent">Amortization in percent</label>
-                            <input type="number" id="amortizationPercent">
-                        </div>
-                        <div class="loanDetails" id="amortization">
-                            <label for="purchaseAmount">Amortization</label>
-                            <input type="number" id="amortization">
-                        </div>
-                        <div class="loanDetails" id="interest-expense">
-                            <label for="interstExpense">Interst Expense</label>
-                            <input type="number" id="interstExpense">
-                        </div>
-                        <div class="loanDetails" id="total-loan-cost">
-                            <label for="totalLoanCost">Total Loan Cost</label>
-                            <input type="number" id="totalLoanCost">
-                        </div>
-                        <button class="calculate-btn">Calculate</button>
-                    </form>
+
+                    <div class="slidecontainer">
+                        <label for="slider">Purchase Amount</label><br>
+                        <input type="range" min="0" max="20000000" step="1000" value="50000" id="slider"
+                            oninput="output.value"><br>
+                        <output id="output">5000000</output>
+                    </div>
+
+                    <div class="slidecontainer">
+                        <label for="slider">Down Payment</label><br>
+                        <input type="range" min="0" max="2000000" step="1000" value="5000" id="slider"
+                            oninput="output.value"><br>
+                        <output id="output">5000000</output>
+                    </div>
+
+                    <div class="slidecontainer">
+                        <label for="slider">Interest</label><br>
+                        <input type="range" min="0" max="20000000" step="1000" value="50000" id="slider"
+                            oninput="output.value"><br>
+                        <output id="output">5000000</output>
+                    </div>
+
+                    <div class="slidecontainer">
+                        <label for="slider">Amortization</label><br>
+                        <input type="range" min="0" max="20000000" step="1000" value="50000" id="slider"
+                            oninput="output.value"><br>
+                        <output id="output">5000000</output>
+                    </div>
+
+                    <div class="slidecontainer">
+                        <label for="slider">InterestPercent</label><br>
+                        <input type="range" min="0" max="20000000" step="1000" value="50000" id="slider"
+                            oninput="output.value"><br>
+                        <output id="output">5000000</output>
+                    </div>
+
+                    <div class="slidecontainer">
+                        <label for="slider">Interest amount</label><br>
+                        <input type="range" min="0" max="20000000" step="1000" value="50000" id="slider"
+                            oninput="output.value"><br>
+                        <output id="output">5000000</output>
+                    </div>
+
+                    <div class="slidecontainer">
+                        <label for="slider">Total Loan Cost</label><br>
+                        <input type="range" min="0" max="20000000" step="1000" value="50000" id="slider"
+                            oninput="output.value"><br>
+                        <output id="output">5000000</output>
+                    </div>
+                    <button class="calculate-btn">Calculate</button>
                 </div>
+            
                 <div class="item">
-                    <div class="top-right">
-                        <h3>Result</h3>
+                    <h3>Result</h3>
+                    <div class="loan-summary">
+                        <p>Cost the first year</p>
+                        <p>Monthly cost</p>
+                        <p>xxxx</p>
+                        <p>xxxx</p>
+                        <p>xxxx</p>
+                        <p>xxxx</p>
+                        <p>xxxx</p>
+                        <p>xxxx</p>
+                        <h4>Graf of the finans of the...</h4>
                     </div>
-                    <div class="interest-cost">
-                        <h5>Interest</h5>
-                        <input type="text">
-                    </div>
-                </div>
+                </div>    
             </div>
         </div>
     </main>
