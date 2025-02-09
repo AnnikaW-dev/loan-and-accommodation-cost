@@ -27,7 +27,6 @@ body {
     background-color: var(--primary-color);
 }
 
-
 /*Header*/
 header { 
     background-color: var(--secondary-color);
@@ -45,13 +44,22 @@ header a {
 }
 /* Main Content*/ 
 main {
-    /*background-color: aqua;*/
-    /*Make main element take up all space and push the fotter down*/
+    background-color: aqua;
+    /*Make main element take up all space and push the footer down*/
     flex: 1 0 auto;
+}
+.container {
+    width: 600px;
+    margin: 240px auto;
+    background-color: #fff;
+    box-shadow: 0 12px 50px -11px var(--text-color);
+    border-radius: 8px;
+    color: var(--text-color); 
 }
 
 /*Footer*/
 footer {
     background-color: var(--secondary-color);
 }
+
 

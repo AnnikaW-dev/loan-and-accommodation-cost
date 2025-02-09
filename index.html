@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Loan & accommodation. to calculate the cost for house loan with & with out accomendation. Cost calculation">
+    <meta name="description"
+        content="Loan & accommodation. to calculate the cost for house loan with & with out accomendation. Cost calculation">
     <meta name="keywords" content="Loan cost, house costs, calculation">
-    
+
 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Loan & accommodation cost</title>
@@ -23,7 +24,42 @@
         </a>
     </header>
     <main>
-        main content
+        <div class="container">
+            <div class="top">
+                <h2>Loan & Accomnendation Costs</h2>
+            </div>
+            <div class="left">
+                <div class="mb-3">
+                    <label for="purchaseAmount" class="form-label">Purchase Amount</label>
+                    <input type="number" class="form-control" id="purchaseAmount" placeholder="123">
+                </div>
+                <div class="mb-3">
+                    <label for="downPayment" class="form-label">Down Payment</label>
+                    <input type="number" class="form-control" id="downPayment" placeholder="123">
+                </div>
+                <div class="mb-3">
+                    <label for="interest" class="form-label">Interest</label>
+                    <input type="number" class="form-control" id="interest" placeholder="123">
+                </div>
+                <div class="mb-3">
+                    <label for="amortizationPercent" class="form-label">Amortization in percent</label>
+                    <input type="number" class="form-control" id="amortizationPercent" placeholder="123">
+                </div>
+                <div class="mb-3">
+                    <label for="amortization" class="form-label">Amortization</label>
+                    <input type="number" class="form-control" id="amortization" placeholder="123">
+                </div>
+                <div class="mb-3">
+                    <label for="interstExpense" class="form-label">Interst Expense</label>
+                    <input type="number" class="form-control" id="interstExpense" placeholder="123">
+                </div>
+                <div class="mb-3">
+                    <label for="totalLoanCost" class="form-label">Total Loan Cost</label>
+                    <input type="number" class="form-control" id="totalLoanCost" placeholder="123">
+                </div>
+                <button class="calculate-btn">Calculate</button>
+            </div>
+        </div>
     </main>
     <footer>
         Footer
