@@ -19,40 +19,56 @@
 
 <body>
     <main>
-        <div class="container">
+        <div class="container1">
             <div class="top">
-                <h2>Loan & Accomnendation Costs</h2>
+                <h2>Loan & Accomodation Cost</h2>
             </div>
-            <div class="left">
-                <div class="mb-3">
-                    <label for="purchaseAmount" class="form-label">Purchase Amount</label>
-                    <input type="number" class="form-control" id="purchaseAmount" placeholder="123">
+            <div class="container2">
+                <div class="item">
+                    <div class="topLeft">
+                        <h3>Your Loan Details</h3>
+                    </div>
+                    <form action="#">
+                        <div class="loanDetails" id="purchase-amount">
+                            <label for="purchaseAmount">Purchase Amount</label>
+                            <input type="number" id="purchaseAmount">
+                        </div>
+                        <div class="loanDetails" id="down-payment">
+                            <label for="downPayment">Down Payment</label>
+                            <input type="number" id="downPayment">
+                        </div>
+                        <div class="loanDetails" id="interest-1">
+                            <label for="interest">Interest</label>
+                            <input type="number" id="interest">
+                        </div>
+                        <div class="loanDetails" id="amortizationPercent">
+                            <label for="amortizationPercent">Amortization in percent</label>
+                            <input type="number" id="amortizationPercent">
+                        </div>
+                        <div class="loanDetails" id="amortization">
+                            <label for="purchaseAmount">Amortization</label>
+                            <input type="number" id="amortization">
+                        </div>
+                        <div class="loanDetails" id="interest-expense">
+                            <label for="interstExpense">Interst Expense</label>
+                            <input type="number" id="interstExpense">
+                        </div>
+                        <div class="loanDetails" id="total-loan-cost">
+                            <label for="totalLoanCost">Total Loan Cost</label>
+                            <input type="number" id="totalLoanCost">
+                        </div>
+                        <button class="calculate-btn">Calculate</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="downPayment" class="form-label">Down Payment</label>
-                    <input type="number" class="form-control" id="downPayment" placeholder="123">
+                <div class="item">
+                    <div class="top-right">
+                        <h3>Result</h3>
+                    </div>
+                    <div class="interest-cost">
+                        <h5>Interest</h5>
+                        <input type="text">
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="interest" class="form-label">Interest</label>
-                    <input type="number" class="form-control" id="interest" placeholder="123">
-                </div>
-                <div class="mb-3">
-                    <label for="amortizationPercent" class="form-label">Amortization in percent</label>
-                    <input type="number" class="form-control" id="amortizationPercent" placeholder="123">
-                </div>
-                <div class="mb-3">
-                    <label for="amortization" class="form-label">Amortization</label>
-                    <input type="number" class="form-control" id="amortization" placeholder="123">
-                </div>
-                <div class="mb-3">
-                    <label for="interstExpense" class="form-label">Interst Expense</label>
-                    <input type="number" class="form-control" id="interstExpense" placeholder="123">
-                </div>
-                <div class="mb-3">
-                    <label for="totalLoanCost" class="form-label">Total Loan Cost</label>
-                    <input type="number" class="form-control" id="totalLoanCost" placeholder="123">
-                </div>
-                <button class="calculate-btn">Calculate</button>
             </div>
         </div>
     </main>

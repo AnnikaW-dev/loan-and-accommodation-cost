@@ -27,35 +27,47 @@ body {
     background-color: var(--primary-color);
 }
 
-/*Header*/
-header { 
-    background-color: var(--secondary-color);
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    text-align: center;
-}
-
-header a {
-    text-decoration: none;
-    color: inherit;
-}
 /* Main Content*/ 
 main {
     background-color: aqua;
     /*Make main element take up all space and push the footer down*/
     flex: 1 0 auto;
 }
-.container {
-    width: 600px;
+.container1 {
+    
+    width: 80%;
     margin: 240px auto;
     background-color: #fff;
     box-shadow: 0 12px 50px -11px var(--text-color);
     border-radius: 8px;
     color: var(--text-color); 
 }
+
+.top {
+    background-color: #aa767c;
+    padding: 24px;
+    text-align: center;
+}
+
+.container2 {display: grid;
+    display: flex;
+    gap: 10px;
+}
+
+.item {
+    flex: 1; /* Fördelar utrymmet jämnt */
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+label {
+    width: 170px;
+    height: 20;
+}
+.right {
+
+}
+
 
 /*Footer*/
 footer {
