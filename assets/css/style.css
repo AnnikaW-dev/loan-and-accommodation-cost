@@ -65,11 +65,7 @@ main {
     padding: 5px 5px;
 }
 
-lable {
-    text-align: start;
-    width: 130;
-    height: 20;
-}
+
 
 #output {
     border: 1px solid var(--text-color);
@@ -105,7 +101,7 @@ input[type="text"] {
     font-weight: bold;
     background: #f9f9f9;
 }
-.calculate-btn {
+.btn {
     padding: 5px;
     margin: 10px;
 }

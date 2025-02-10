@@ -7,8 +7,7 @@
     <meta name="description"
         content="Loan & accommodation. to calculate the cost for house loan with & with out accomendation. Cost calculation">
     <meta name="keywords" content="Loan cost, house costs, calculation">
-
-
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Loan & accommodation cost</title>
     <!--Favicon-->
@@ -31,16 +30,15 @@
 
                     <div class="slidecontainer">
                         <label for="purchase-amount-slider">Purchase Amount</label><br>
-                        <input type="range" min="0" max="20000000" step="1000" value="5000000" id="purchase-amount-slider"
-                            oninput="output.value"><br>
-                        <output id="purchase-amount-output">5000000</output>
+                        <input type="range" min="0" max="20000000" step="1000" value="5000000" id="purchase-amount-slider">
+                        <br>
+                        <output id="purchase-amount-output">2500000</output>
                     </div>
 
                     <div class="slidecontainer">
                         <label for="down-payment-slider">Down Payment</label><br>
-                        <input type="range" min="0" max="2000000" step="1000" value="250000" id="down-payment-slider"
-                            oninput="output.value"><br>
-                        <output id="down-payment-output">2500000</output>
+                        <input type="range" min="0" max="2000000" step="1000" value="250000" id="down-payment-slider"><br>
+                        <output id="down-payment-output">250000</output>
                     </div>
 
                     <div class="slidecontainer">
@@ -70,7 +68,7 @@
                             oninput="output.value"><br>
                         <output id="total-loan-cost-output">5000</output>
                     </div>
-                    <button id="calcilate-btn" class="btn">Calculate</button>
+                    <button id="calculate-btn" class="btn">Calculate</button>
                 </div>
             
                 <div class="item">
@@ -93,7 +91,7 @@
     <footer>
         Footer
     </footer>
-    <script></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
