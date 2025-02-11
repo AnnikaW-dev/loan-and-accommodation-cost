@@ -30,7 +30,7 @@ document.getElementById("calculate-btn").addEventListener("click", function(){
 
     //calculate
     const loanAmount = purchaseAmount - downPayment;
-    const loanToValueRatio = ((loanAmount / purchaseAmount)* 100).toFixed(0)+ "%";
+    const loanToValueRatio = ((loanAmount / purchaseAmount ) * 100).toFixed(0)+ "%";
     const monthlyInterest = ((loanAmount * (interest /100)) / 12).toFixed(0);
     const monthlyTotalCost = (parseFloat(monthlyInterest) + amortization).toFixed(0);
     const yearCost = (monthlyTotalCost * 12).toFixed(0);
@@ -39,9 +39,9 @@ document.getElementById("calculate-btn").addEventListener("click", function(){
         document.getElementById(elementId).textContent = new Intl.NumberFormat().format(value);
     }
 
-    updateResult("yourFirstYear", yearCost);
-    updateResult("YourMonthlyCost", monthlyTotalCost);
-    updateResult("purchaseAmount", purchaseAmount);
+    updateResult("yourFirstYear", yearCost);             // OK
+    updateResult("YourMonthlyCost", monthlyTotalCost);   // OK
+    updateResult("yourPrice", purchaseAmount);
     updateResult("yourDownPayment",downPayment);
     updateResult("yourLoanRatio", loanToValueRatio);
     updateResult("yourMounthlyInterest", monthlyInterest);
