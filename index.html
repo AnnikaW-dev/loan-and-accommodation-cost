@@ -7,9 +7,12 @@
     <meta name="description"
         content="Loan & accommodation. to calculate the cost for house loan with & with out accomendation. Cost calculation">
     <meta name="keywords" content="Loan cost, house costs, calculation">
-    
-    <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Loan & accommodation cost</title>
+    <!--Style sheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <!--Favicon-->
     <link rel="apple-touch-icon" size="180*180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" size="32*32" href="assets/favicon/favicon-32x32.png">
@@ -18,35 +21,34 @@
 
 <body>
     <main>
-        <div class="container1">
+        <div class="container">
             <div class="top">
                 <h2>Loan & Accomodation Cost</h2>
             </div>
             <div class="container2">
-                <div class="item">
-                    <div class="topLeft">
-                        <h3>Your Loan Details</h3>
-                    </div>
+                <div class="left-column">
+                    <h3>Your Loan Details</h3>
 
-                    <div class="slidecontainer">
+                    <div class="slider-container">
                         <label for="purchase-amount-slider">Purchase Amount</label>
-                        <input type="range" min="0" max="20000000" step="1000" value="5000000" id="purchase-amount-slider">
+                        <input type="range" min="0" max="20000000" step="1000" value="5000000"
+                            id="purchase-amount-slider">
                         <output id="purchase-amount-output">2500000</output>
                     </div>
 
-                    <div class="slidecontainer">
+                    <div class="slider-container">
                         <label id="label" for="down-payment-slider">Down Payment</label>
                         <input type="range" min="0" max="2000000" step="1000" value="250000" id="down-payment-slider">
                         <output id="down-payment-output">250000</output>
                     </div>
 
-                    <div class="slidecontainer">
+                    <div class="slider-container">
                         <label for="interest-slider">Interest</label>
                         <input type="range" min="0" max="20" step="0.01" value="5" id="interest-slider">
                         <output id="interest-output">5</output>
                     </div>
 
-                    <div class="slidecontainer">
+                    <div class="slider-container">
                         <label for="amortization-slider">Amortization</label>
                         <input type="range" min="0" max="20000" step="1" value="2000" id="amortization-slider">
                         <output id="amortization-output">2000</output>
@@ -54,38 +56,36 @@
 
                     <button id="calculate-btn" class="btn">Calculate</button>
                 </div>
-            
-                <div class="item">
-                    <h3>Result</h3>
-                    <div id="results" class="loan-summary">
-                        <p>Cost the first year:<span id="yourFirstYear"></span></p>
-                        
-                        <p>Monthly cost:<span id="YourMonthlyCost"></span></p>
-                      
-                        <p>The price of the home:<span id="yourPrice"></span></p>
-                        
-                        <p>Your Down Payment:<span id="yourDownPayment"></span></p>
-                        
-                        <p>Your mortgage:<span id="yourMortgage"></span></p>
-                       
-                        <p>Loan-To-Ratio:<span id="yourLoanRatio"></span></p>
-                       
-                        <p>Your Monthly Intesrest Cost:<span id="yourMounthlyInterest"></span></p>
-                        
-                        <p>Your Monthly Amortization:<span id="yourMonthlyAmortization"></span></p>
-                        
-                        <h4>Graf of Loan to Ratio:<span> result</span></h4>
-                        
-                    </div>
 
-                </div>    
+                <div class="right-column">
+                    <h3>Result</h3>
+
+                    <div id="loan-summary" class="result-container">
+                        <div class="result"><span> Cost the first year:</span><span id="yourFirstYear"></span></div>
+
+                        <div class="result"><span>Monthly cost:</span><span id="YourMonthlyCost"></span></div>
+
+                        <div class="result"><span>The price of the home:</span><span id="yourPrice"></span></div>
+
+                        <div class="result"><span>Your Down Payment:</span><span id="yourDownPayment"></span></div>
+
+                        <div class="result"><span>Your mortgage:</span><span id="yourMortgage"></span></div>
+
+                        <div class="result"><span>Loan-To-Ratio:</span><span id="yourLoanRatio"></span></div>
+
+                        <div class="result"><span>Your Monthly Intesrest Cost:</span><span id="yourMounthlyInterest"></span></div>
+
+                        <div class="result"> Your Monthly Amortization:</span><span id="yourMonthlyAmortization"></span></<div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="statistice-container">
+                <h4>Graf of Loan to Ratio:<span> result</span></h4>
+            </div>
     </main>
-    <footer>
-        Footer
-    </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"></script>
 </body>
 
 </html>
