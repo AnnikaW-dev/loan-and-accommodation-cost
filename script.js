@@ -15,24 +15,29 @@ function updateSliderValue(sliderId, outputId) {
 // Apply the function to each slider
 updateSliderValue("purchase-amount-slider", "purchase-amount-output");
 updateSliderValue("down-payment-slider", "down-payment-output");
-updateSliderValue("interst-slider", "interst-output");
+updateSliderValue("interest-slider", "interest-output");
 updateSliderValue("amortization-slider", "amortization-output");
+
 
 
 // Handle the Calculate Button Click
 document.getElementById("calculate-btn").addEventListener("click", function(){
     // get values
-    const purchaseAmount = parseFloat(document.getElementById("purchase-amount-output").value || 0);
-    const downPayment = parseFloat(document.getElementById("down-payment-output").value || 0);
-    const interest = parseFloat(document.getElementById("interst-output").value || 0);
-    const amortization = parseFloat(document.getElementById("amortization-output").value || 0)
+    const purchaseAmount = parseFloat(document.getElementById("purchase-amount-slider").textContent || 0);
+    const downPayment = parseFloat(document.getElementById("down-payment-slider").textContent || 0);
+    const interest = parseFloat(document.getElementById("interest-slider").textContent || 0);
+    const amortization = parseFloat(document.getElementById("amortization-slider").textContent || 0)
 
     //calculate
     const loanAmount = purchaseAmount - downPayment;
     const loanToValueRatio = ((loanAmount / purchaseAmount)* 100).toFixed(0)+ "%";
-    const monthlyInterest = ((loanAmount * interest) / 12).toFixed(0);
+    const monthlyInterest = ((loanAmount * (interest /100)) / 12).toFixed(0);
     const monthlyTotalCost = (parseFloat(monthlyInterest) + amortization).toFixed(0);
     const yearCost = (monthlyTotalCost * 12).toFixed(0);
+
+    /*function updateResult(elementId, value) {
+        document.getElementById(elementId).textContent new Intl.NumberFormat().format(value);
+    }*/
 
     updateResult("yourFirstYear", yearCost);
     updateResult("YourMonthlyCost", monthlyTotalCost);
