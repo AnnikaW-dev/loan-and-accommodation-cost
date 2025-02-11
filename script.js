@@ -23,10 +23,10 @@ updateSliderValue("amortization-slider", "amortization-output");
 // Handle the Calculate Button Click
 document.getElementById("calculate-btn").addEventListener("click", function(){
     // get values
-    const purchaseAmount = parseFloat(document.getElementById("purchase-amount-slider").textContent || 0);
-    const downPayment = parseFloat(document.getElementById("down-payment-slider").textContent || 0);
-    const interest = parseFloat(document.getElementById("interest-slider").textContent || 0);
-    const amortization = parseFloat(document.getElementById("amortization-slider").textContent || 0)
+    const purchaseAmount = parseFloat(document.getElementById("purchase-amount-slider").value || 0);
+    const downPayment = parseFloat(document.getElementById("down-payment-slider").value || 0);
+    const interest = parseFloat(document.getElementById("interest-slider").value || 0);
+    const amortization = parseFloat(document.getElementById("amortization-slider").value || 0)
 
     //calculate
     const loanAmount = purchaseAmount - downPayment;
@@ -35,9 +35,9 @@ document.getElementById("calculate-btn").addEventListener("click", function(){
     const monthlyTotalCost = (parseFloat(monthlyInterest) + amortization).toFixed(0);
     const yearCost = (monthlyTotalCost * 12).toFixed(0);
 
-    /*function updateResult(elementId, value) {
-        document.getElementById(elementId).textContent new Intl.NumberFormat().format(value);
-    }*/
+    function updateResult(elementId, value) {
+        document.getElementById(elementId).textContent = new Intl.NumberFormat().format(value);
+    }
 
     updateResult("yourFirstYear", yearCost);
     updateResult("YourMonthlyCost", monthlyTotalCost);
