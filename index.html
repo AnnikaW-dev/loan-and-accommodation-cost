@@ -29,61 +29,55 @@
                     </div>
 
                     <div class="slidecontainer">
-                        <label for="purchase-amount-slider">Purchase Amount</label><br>
+                        <label for="purchase-amount-slider">Purchase Amount</label>
                         <input type="range" min="0" max="20000000" step="1000" value="5000000" id="purchase-amount-slider">
-                        <br>
                         <output id="purchase-amount-output">2500000</output>
                     </div>
 
                     <div class="slidecontainer">
-                        <label for="down-payment-slider">Down Payment</label><br>
-                        <input type="range" min="0" max="2000000" step="1000" value="250000" id="down-payment-slider"><br>
+                        <label id="label" for="down-payment-slider">Down Payment</label>
+                        <input type="range" min="0" max="2000000" step="1000" value="250000" id="down-payment-slider">
                         <output id="down-payment-output">250000</output>
                     </div>
 
                     <div class="slidecontainer">
-                        <label for="interst-slider">Interest</label><br>
-                        <input type="range" min="0" max="20" step="0.01" value="5" id="interst-slider"
-                            oninput="output.value"><br>
+                        <label for="interst-slider">Interest</label>
+                        <input type="range" min="0" max="20" step="0.01" value="5" id="interst-slider">
                         <output id="interst-output">5</output>
                     </div>
 
                     <div class="slidecontainer">
-                        <label for="amortization-slider">Amortization</label><br>
-                        <input type="range" min="0" max="20000" step="1" value="2000" id="amortization-slider"
-                            oninput="output.value"><br>
+                        <label for="amortization-slider">Amortization</label>
+                        <input type="range" min="0" max="20000" step="1" value="2000" id="amortization-slider">
                         <output id="amortization-output">2000</output>
                     </div>
 
-                    <div class="slidecontainer">
-                        <label for="interest-costs-slider">Interest Costs</label><br>
-                        <input type="range" min="0" max="2000" step="1" value="1000" id="interest-costs-slider"
-                            oninput="output.value"><br>
-                        <output id="nterest-costs-output">1000</output>
-                    </div>
-
-                    <div class="slidecontainer">
-                        <label for="total-loan-cost-slider">Total Loan Cost</label><br>
-                        <input type="range" min="0" max="20000" step="1" value="5000" id="total-loan-cost-slider"
-                            oninput="output.value"><br>
-                        <output id="total-loan-cost-output">5000</output>
-                    </div>
                     <button id="calculate-btn" class="btn">Calculate</button>
                 </div>
             
                 <div class="item">
                     <h3>Result</h3>
-                    <div class="loan-summary">
-                        <p>Cost the first year</p>
-                        <p>Monthly cost</p>
-                        <p>xxxx</p>
-                        <p>xxxx</p>
-                        <p>xxxx</p>
-                        <p>xxxx</p>
-                        <p>xxxx</p>
-                        <p>xxxx</p>
-                        <h4>Graf of the finans of the...</h4>
+                    <div id="results" class="loan-summary">
+                        <p>Cost the first year:<span id="yourFirstYear"></span></p>
+                        
+                        <p>Monthly cost:<span id="YourMonthlyCost"></span></p>
+                      
+                        <p>The price of the home:<span id="yourPrice"></span></p>
+                        
+                        <p>Your Down Payment:<span id="yourDownPayment"></span></p>
+                        
+                        <p>Your mortgage:<span id="yourMortgage"></span></p>
+                       
+                        <p>Loan-To-Ratio:<span id="yourLoanRatio"></span></p>
+                       
+                        <p>Your Monthly Intesrest Cost:<span id="yourMounthlyInterest"></span></p>
+                        
+                        <p>Your Monthly Amortization:<span id="yourMonthlyAmortization"></span></p>
+                        
+                        <h4>Graf of Loan to Ratio:<span> result</span></h4>
+                        
                     </div>
+
                 </div>    
             </div>
         </div>
@@ -91,7 +85,7 @@
     <footer>
         Footer
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
