@@ -3,7 +3,7 @@
 
 * {
     font-family: "Monsterrat", sans-serif;
-    padding: 0;
+    /* padding: 0; */
     margin: 0;
     box-sizing: border-box;
 }
@@ -53,7 +53,7 @@ main {
 .container2 {
     display: flex;
     flex: 1fr 1fr;
-    gap: 20px;  
+    /* gap: 10px; */
     /*max-width: 900px;*/
     margin: auto;
 }
@@ -61,7 +61,7 @@ main {
 .left-column, .right-column {
     display: flex;
     flex: 1;
-    padding: 20px;
+    padding: 9px;
     background: white;
     border-radius: 10px;
     flex-wrap: nowrap;
@@ -74,15 +74,20 @@ main {
     margin-bottom: 15px;
     font-weight: bold;
 }
+.slider { 
+    width: 250px;
+    position: relative;
+ }
 
 input [type="range"] {
     margin: 0 10px;
     -webkit-appearance: none;
-    width: 100%;
+    width: 400px;
     height: 8px;
     background: #c1c1c1;
     border-radius: 5px;
     outline: none;
+    position: relative;
 } 
  
 input[type="range"]::-webkit-slider-thumb {
