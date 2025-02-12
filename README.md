@@ -196,10 +196,11 @@ To clone the Loan & accomendation cost repository:
 ![contrast result at WAVE testing](doc/readme_images/WAVE.png)
 
 ### W3C HTML checker
-![Check the HTML code](doc/readme_images/w3c_html_checker)
+![Check the HTML code](doc/readme_images/w3c_html_checker.png)
 
 ### Jigsaw w3 CSS Checker
-![Check the CSS code]
+![Check the CSS code](doc/readme_images/jigsaw_w3_CSS_code_checker.png)
+
 ### Manuel Testing
 
 * Responsivness - Tested on Chrome Dev Tool during the developpment to make sure it was ok - OK
@@ -213,39 +214,34 @@ To clone the Loan & accomendation cost repository:
 ## Validator Testing
 
 I did validator testing for the page and got some errors:
-*Wave 
+* Wave 
  * For use the missing h1 header (from Wave)
 
+#### W3C_html_checker
  * Element link is missing one or more of attributes
-
  * Attribute size not allowed on element link 
-
  * Stray endtag span
-
  * Garbage after </>
+
+#### Jigsaw_w3_CSS_code_checker
+ *.container2: 1fr is not aflex value
+ * #calculator-btn:hover: 0.2 is not a transition value
+ * #reset-btn:hover 0.2 is not a not a transition value
+ * -webkit-apperance is not a is not a known provider  of extension
+* ::webkit-slider-thumb is not a known name of a vendor-specific pseudo-element
 
 All this Errors was easy to find and fix.
 
 ## Credits
 
-ID 128283559, 131391464, 128283557 © Onyxprj | Dreamstime.com
 
-ID 197896178 © Marina Karavaeva | Dreamstime.com
-
-ID 106234109 © Anastasiia Shinkareva | Dreamstime.com
-
-ID 297226422 © Prominentprintwear | Dreamstime.com
-
-ID 176240997 © Tartilastock | Dreamstime.com
-
-ID 193880406, 132871369 © VectorMine | Dreamstime.com 
 
 ### Content
 
-I have writen all content on YogaPusa my self.
+I have writen all the code by my self with a little help from google and chat-gpt when the code didnt work as I expected.
 
 ###  Acknowledgments
 
-My Code Intitute Mentor Gareth Mc Girr for all links for tests and support.
+My Code Intitute Mentor Gareth Mc Girr for all links and for the support.
 
 My Two dogs Rocky and Ineze for there patience when I sitt infront of the computer to long.
