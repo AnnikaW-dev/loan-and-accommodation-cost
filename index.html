@@ -31,55 +31,56 @@
                     <h3>Your Loan Details</h3>
 
                     <div class="slider-container">
-                        <label for="purchase-amount-slider">Purchase Amount</label>
+                        <label for="purchase-amount-slider">Purchase Amount(SEK)</label>
                         <input type="range" min="500000" max="10000000" step="10000" value="5000000"
                             id="purchase-amount-slider" class="slider">
                         <output id="purchase-amount-output">2500000</output>
                     </div>
 
                     <div class="slider-container">
-                        <label id="label" for="down-payment-slider">Down Payment</label>
+                        <label id="label" for="down-payment-slider">Down Payment(SEK)</label>
                         <input type="range" min="50000" max="1000000" step="1000" value="250000"
                             id="down-payment-slider" class="slider">
                         <output id="down-payment-output">250000</output>
                     </div>
 
                     <div class="slider-container">
-                        <label for="interest-slider">Interest</label>
+                        <label for="interest-slider">Interest(%)</label>
                         <input type="range" min="0" max="10" step="0.01" value="5" id="interest-slider" class="slider">
                         <output id="interest-output">5</output>
                     </div>
 
                     <div class="slider-container">
-                        <label for="amortization-slider">Amortization</label>
+                        <label for="amortization-slider">Amortization:(SEK)</label>
                         <input type="range" min="0" max="20000" step="1" value="2000" id="amortization-slider"
                             class="slider">
-                        <output id="amortization-output">2000</output>
+                        <output id="amortization-output">2000 <span>SEK</span></output>
                     </div>
 
-                    <button id="calculate-btn">Calculate</button><br>
+                    <button id="calculate-btn">Calculate</button>
                 </div>
 
                 <div class="right-column">
                     <h3>Result</h3>
 
                     <div id="loan-summary" class="result-container">
-                        <div class="result"><span> Cost the first year:</span><span id="yourFirstYear"></span></div>
+                        <div class="result"><span> Cost the first year:(SEK)</span><span id="yourFirstYear"></span>
+                        </div>
 
-                        <div class="result"><span>Monthly cost:</span><span id="YourMonthlyCost"></span></div>
+                        <div class="result"><span>Monthly cost:(SEK)</span><span id="YourMonthlyCost"></span></div>
 
-                        <div class="result"><span>The price of the home:</span><span id="yourPrice"></span></div>
+                        <div class="result"><span>The price of the home:(SEK)</span><span id="yourPrice"></span></div>
 
-                        <div class="result"><span>Your Down Payment:</span><span id="yourDownPayment"></span></div>
+                        <div class="result"><span>Your Down Payment:(SEK)</span><span id="yourDownPayment"></span></div>
 
-                        <div class="result"><span>Your mortgage:</span><span id="yourMortgage"></span></div>
+                        <div class="result"><span>Your mortgage:(SEK)</span><span id="yourMortgage"></span></div>
 
-                        <div class="result"><span>Loan-To-Ratio:</span><span id="yourLoanRatio"></span></div>
+                        <div class="result"><span>Loan-To-Ratio:(%)</span><span id="yourLoanRatio"></span></div>
 
-                        <div class="result"><span>Your Monthly Intesrest Cost:</span><span
+                        <div class="result"><span>Your Monthly Intesrest Cost:(SEK)</span><span
                                 id="yourMounthlyInterest"></span></div>
 
-                        <div class="result"><span>Your Monthly Amortization:</span><span
+                        <div class="result"><span>Your Monthly Amortization:(SEK)</span><span
                                 id="yourMonthlyAmortization"></span>
                         </div>
                     </div>
