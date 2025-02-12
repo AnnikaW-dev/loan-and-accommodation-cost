@@ -31,21 +31,21 @@
 
                     <div class="slider-container">
                         <label for="purchase-amount-slider">Purchase Amount</label>
-                        <input type="range" min="0" max="20000000" step="1000" value="5000000"
+                        <input type="range" min="500000" max="10000000" step="10000" value="5000000"
                             id="purchase-amount-slider" class="slider">
                         <output id="purchase-amount-output">2500000</output>
                     </div>
 
                     <div class="slider-container">
                         <label id="label" for="down-payment-slider">Down Payment</label>
-                        <input type="range" min="0" max="2000000" step="1000" value="250000" 
+                        <input type="range" min="50000" max="1000000" step="1000" value="250000" 
                         id="down-payment-slider" class="slider">
                         <output id="down-payment-output">250000</output>
                     </div>
 
                     <div class="slider-container">
                         <label for="interest-slider">Interest</label>
-                        <input type="range" min="0" max="20" step="0.01" value="5" id="interest-slider" class="slider">
+                        <input type="range" min="0" max="10" step="0.01" value="5" id="interest-slider" class="slider">
                         <output id="interest-output">5</output>
                     </div>
 
@@ -55,7 +55,7 @@
                         <output id="amortization-output">2000</output>
                     </div>
 
-                    <button id="calculate-btn">Calculate</button>
+                    <button id="calculate-btn">Calculate</button><br>
                 </div>
 
                 <div class="right-column">
@@ -89,7 +89,7 @@
         </div>
     </main>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"></script>
+
 </body>
 
 </html>
