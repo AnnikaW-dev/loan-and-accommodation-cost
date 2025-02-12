@@ -36,7 +36,7 @@ main {
 }
 .container {
     width: 80%;
-    margin: 240px auto;
+    margin: 140px auto;
     background-color: #fff;
     box-shadow: 0 12px 50px -11px var(--text-color);
     border-radius: 8px;
@@ -47,21 +47,25 @@ main {
     background-color: #aa767c;
     padding: 24px;
     text-align: center;
+    width: 100%;
 }
 
 .container2 {
     display: flex;
-    grid-template-columns: 1fr 1fr;
+    flex: 1fr 1fr;
     gap: 20px;  
     /*max-width: 900px;*/
     margin: auto;
 }
 
-.left-column, .right-column { 
+.left-column, .right-column {
+    display: flex;
     flex: 1;
     padding: 20px;
     background: white;
     border-radius: 10px;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 .slider-container {
     display: flex;
@@ -105,14 +109,26 @@ input[type="text"] {
     justify-content: space-between;
     margin-bottom: 10px;
     font-weight: bold;
+    align-items: center;
 }
 
-.btn {
+#calculate-btn {
+    order: 1;
+    align-self: center;
     padding: 5px;
     margin: 10px;
 }
-
-/*show results in a column*/
+/* Responsiv layout for mobile*/
+@media (max-width: 800px) {
+    .container2{
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: 90%;
+        margin-top: 10px;
+    }
+}
 
 
 
