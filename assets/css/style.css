@@ -52,9 +52,7 @@ main {
 
 .container2 {
     display: flex;
-    flex: 1fr 1fr;
-    /* gap: 10px; */
-    /*max-width: 900px;*/
+    flex: 100%;    
     margin: auto;
 }
 
@@ -81,7 +79,6 @@ main {
 
 input [type="range"] {
     margin: 0 10px;
-    -webkit-appearance: none;
     width: 400px;
     height: 8px;
     background: #c1c1c1;
@@ -143,15 +140,7 @@ input[type="text"] {
 background-color: #aa767c;
 color: #000;
 transform: scale(1.1);
-transition: 0.2 ease-in;
 }
-
-#reset-btn:hover {
-    background-color: var(--error-color);
-    color: #000;
-    transform: scale(1.1);
-    transition: 0.2 ease-in;
-    }
 
 /* Responsiv layout for mobile*/
 @media (max-width: 900px) {
