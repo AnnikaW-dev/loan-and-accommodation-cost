@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /*Google Font import*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 
@@ -5,7 +12,8 @@
     font-family: "Monsterrat", sans-serif;
     /* padding: 0; */
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 h3 {
     margin: 20px auto;
@@ -23,8 +31,13 @@ h3 {
 /*general styles*/
 body {
     min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /*Generic proj styles*/
     color: var(--text-color);
     background-color: var(--primary-color);
@@ -38,7 +51,8 @@ main {
     width: 80%;
     margin: 140px auto;
     background-color: #fff;
-    box-shadow: 0 12px 50px -11px var(--text-color);
+    -webkit-box-shadow: 0 12px 50px -11px var(--text-color);
+            box-shadow: 0 12px 50px -11px var(--text-color);
     border-radius: 8px;
     color: var(--text-color); 
 }
@@ -51,24 +65,42 @@ main {
 }
 
 .container2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex: 100%;    
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;    
     margin: auto;
 }
 
 .left-column, .right-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex: 50%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
     padding: 9px;
     background: white;
     border-radius: 10px;
-    flex-wrap: nowrap;
-    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .slider-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 15px;
     font-weight: bold;
 }
@@ -108,16 +140,26 @@ input[type="text"] {
     background: #f9f9f9;
 }
 .result {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 10px;
     font-weight: bold;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #calculate-btn {
-    order: 1;
-    align-self: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     font-weight: bold;
     padding: 5px;
     margin: 10px;
@@ -126,8 +168,12 @@ input[type="text"] {
 }
 
 #reset-btn {
-    order: 1;
-    align-self: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     font-weight: bold;
     padding: 5px;
     margin: 10px;
@@ -139,14 +185,21 @@ input[type="text"] {
 #calculate-btn:hover {
 background-color: #aa767c;
 color: #000;
-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+        transform: scale(1.1);
 }
 
 /* Responsiv layout for mobile*/
 @media (max-width: 900px) {
     .container2{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .container {
         width: 90%;
@@ -154,15 +207,22 @@ transform: scale(1.1);
     }
     .slider {
         width: 250px;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
         position: relative;
     }
 }
 
 @media (max-width: 500px) {
     .container2{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .container {
         width: 90%;
@@ -170,9 +230,10 @@ transform: scale(1.1);
     }
     .slider {
         width: 90px;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
         position: relative;
     }
 }
-
 
