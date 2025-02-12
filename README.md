@@ -3,7 +3,7 @@
 I thougth that an easily accessible calculator should be god to have when you are about to buy a new home. When I started to draw the wire frame for this i got quit big with alot of calculation and my thought was also that you should be able to calculate your tax when you sold one home and bought a new and many more things. What I also whanted to get in was statistics whit some grafs.
 I started big in my mind and looked around how i should build this but the time ran away for me and it resulted in this small calculator due to the time and also because things that I thuoght was easy where much more tricky and time consuming that I first thought. 
 
-![Loan & accomendationcost Website shown on a range of devices](docs/readme_images/mockup.png)
+![Loan & accomendationcost Website shown on a range of devices](doc/readme_images/mockup.png)
 
 
 
