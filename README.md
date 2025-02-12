@@ -122,11 +122,11 @@ I then like to add a screenshot of each page of the site here, i use [amirespons
    *That members can save the calulations 
 ### Accessibility
 
-I have had the accessibillity inmind through the procces of building YogaPause by:
+I have had the accessibillity inmind through the procces of building Loan & accomendation cost by:
 
 * Used sematic HTML
 
-* I havee ensured to meet the minimum contrst reuirements by test with [WAVE](https://wave.webaim.org/) (see the result in the test section)
+* I have ensured to meet the minimum contrst reuirements by test with [WAVE](https://wave.webaim.org/) (see the result in the test section)
 
 * I have chosen the fonts with the readabillity in mind.
 
@@ -149,6 +149,7 @@ Chrome Dev tools - To se the responsivness and styling.
 
 Favicon.io - To get favicons.
 
+Autoprefixer.github.io - It parses your CSS and adds vendor prefixes to CSS rules using values from [Can I Use](https://caniuse.com/)
 [amiresponsive](https://ui.dev/amiresponsive)  - To show website images on differens devices.
 
 
@@ -158,7 +159,7 @@ Favicon.io - To get favicons.
 Github Pages was used to deploy the live website. The instructions to achieve this are below:
 
 1. Log in (or sign up) to Github.
-2. Find the repository for this project, AnnikaW-dev/YogaPause.
+2. Find the repository for this project, AnnikaW-dev/Loan & accomendation cost.
 3. Click on the Settings link.
 4. Click on the Pages link in the left hand side navigation bar.
 5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
@@ -166,6 +167,8 @@ Github Pages was used to deploy the live website. The instructions to achieve th
 
 
 #### How to Fork
+
+
 
 To fork the Loan & accomendation cost repository:
 
@@ -193,7 +196,7 @@ To clone the Loan & accomendation cost repository:
 
 ### WAVE testing
 
-![contrast result at WAVE testing](doc/readme_images/WAVE.png)
+![contrast result at WAVE testing](doc/readme_images/wave.png)
 
 ### W3C HTML checker
 ![Check the HTML code](doc/readme_images/w3c_html_checker.png)
@@ -203,33 +206,54 @@ To clone the Loan & accomendation cost repository:
 
 ### Manuel Testing
 
-* Responsivness - Tested on Chrome Dev Tool during the developpment to make sure it was ok - OK
+* Responsivness - Tested in  Chrome Dev Tool during the developpment to make sure it was ok 
+    *This is little of an stuggle during the whole process if I come up wiyh a new idea and change just a little thing it is just too start over with the adjustments until it is ok again - OK
 
-* Button
+* Button test 
+    *hover over to se that the hover function is working - OK
+    *pres the caculate button to se that all calculation is working. - OK
 * Range-slider
-* Calculatons
-* 
-*
+    * That was a struggle to make the them be still in one place at the beginign the whole slider moved a when I drag the handle to change the value. 
+    To fix that I needed to get a fiexed width on the slader and set position to responsive. Got this from Chat-GPT after the changes the slider doesn't move as much - A wished I got the time to fix this so it should be stil.
+* Calculations 
+    * Was a struggle before I remembered to use jshint do to that I had some small typos in the code and I thought I had done everything wrong so I done that code over and over again and ended up with one of the first code and just fixed the typo. -OK
+    * Has struggle a lot to get the curreny after the values in both sections with some code in JS but i didn't make it due to time fly away. I ended up with another solution to write the currency in brackets after the label text. -OK but I am not satisfied.
+
 
 ## Validator Testing
 
 I did validator testing for the page and got some errors:
-* Wave 
+#### Wave 
  * For use the missing h1 header (from Wave)
-
+    * Changed so the h2 became h1 and h3 became h2
 #### W3C_html_checker
  * Element link is missing one or more of attributes
+    * It was for the favicon and I had forgoten to fill in rel and size with the right value
  * Attribute size not allowed on element link 
+    *It was for the favicon and I had forgoten to fill in rel and size with the right value
  * Stray endtag span
+    * The start tag was  missing so I added that 
  * Garbage after </>
+    *here was some text that had goten to the wrong place so a removed that
+
+    
+    ![Check the HTML code](doc/readme_images/w3c_html_checker.png)
 
 #### Jigsaw_w3_CSS_code_checker
- *.container2: 1fr is not aflex value
+ *.container2: 1fr is not a flex value
+    *I changed it to 100% 
  * #calculator-btn:hover: 0.2 is not a transition value
+    * I removed the whole transition row.
  * #reset-btn:hover 0.2 is not a not a transition value
- * -webkit-apperance is not a is not a known provider  of extension
+    *I desided to to remove the reset button.
+ * -webkit-apperance- is not a is not a known provider  of extension
+    I removed that line
 * ::webkit-slider-thumb is not a known name of a vendor-specific pseudo-element
+    * I removed that line 
 
+All above actions fixed the errors see the before and after image.
+
+![Check the CSS code](doc/readme_images/jigsaw_w3_CSS_code_checker.png)
 All this Errors was easy to find and fix.
 
 ## Credits
