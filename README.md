@@ -1,7 +1,12 @@
 #  MS2 project-loan-and-accommodation-cost
 
-I thougth that an easily accessible calculator should be god to have when you are about to buy a new home. When I started to draw the wire frame for this i got quit big with alot of calculation and my thought was also that you should be able to calculate your tax when you sold one home and bought a new and many more things. What I also whanted to get in was statistics whit some grafs.
-I started big in my mind and looked around how i should build this but the time ran away for me and it resulted in this small calculator due to the time and also because things that I thuoght was easy where much more tricky and time consuming that I first thought. 
+I thougth that an easily accessible calculator should be good to have when the users are about to buy a new home. 
+When I started to draw the wireframe for this it got quit big with alot of calculation and my thought was also that 
+the user should be able to calculate the tax when you sold one home and bought a new and many more things. What I also 
+wanted to get in was statistics whit some grafs.
+I started big in my mind and looked around how I could build this but the time ran away for me and it resulted in 
+this small calculator due to the time and also because things that I thuoght was easy where much more tricky and 
+time consuming that I first thought. 
 
 ![Loan & accomendationcost Website shown on a range of devices](doc/readme_images/mockup.png)
 
@@ -55,19 +60,19 @@ I started big in my mind and looked around how i should build this but the time 
 I thougth that an easily accessible calculator should be god to have when you are about to buy a new home. When I started to draw the wire frame for this i got quit big with alot of calculation and my thought was also that you should be able to calculate your tax when you sold one home and bought a new and many more things. What I also whanted to get in was statistics whit some grafs.
 I started big in my mind and looked around how i should build this but the time ran away for me and it resulted in this small calculator due to the time and also because things that I thuoght was easy where much more tricky and time consuming that I first thought. 
 
-This is a start up site that will grow to what I first wanted it to be, I also want to be able to let the users login and save there data and makes life much esier when you plan to buy or change home.
+This is a start-up site that will grow to what I first wanted it to be, I also want to be able to let the users login and save there data and makes life much esier when you plan to buy or change home.
 
 ### User Stories
 
 #### Buyer that starts to plan to buy a home
 Would like to in an easy way put in all the numbers for the new home to se if it is affordable.
-Would like to see how much it differs in cost due to the down-payment
-Would like be easy to retrive and check during ongoing bidding
+Would like to see how much it differs in cost due to the down-payment nad interest rate.
+Would like to be easy to retrive and check during ongoing bidding
 #### House broker 
 Want to be able to show all this figures for the custumer how the monthly cost differs due to interestrate, price and down payment.  
 Want a tool that they can share with the costumer due to that will be easier to talk by phone when they can have the same tool.
 ### House owner that want to replace the loan or increase the loan 
-Want to have an easy app to be able to play around with the figure to see how the monthly cost will be affected. 
+Want to have an easy app to be able to play around with the figures to see how the monthly cost will be affected by change bank for an exampel. 
 Want a tool that helps to be able to take good decisions.
 
 
@@ -75,7 +80,7 @@ Want a tool that helps to be able to take good decisions.
 
 ### Colour Scheme
 
-I choosed those colurs due to that I think that many calculating sites is a litte to strict and often very cold colours. I like soft and warm colours so thats why I chose this colours-
+I choosed those colurs due to that I think that many calculating sites is a litte to strict and often very cold colours. I like soft and warm colours so thats why I chose this colours.
 
 
 ![Shows the color scheme that I started from](doc/readme_images/Colours.png)
@@ -102,10 +107,11 @@ Wireframes were created for mobile, tablet, and desktop
 
 ## Features
 
-Loan & accomendation cost have a input part there I have use range sliders to just drag to the right amount that you need and when you have the right figures you click on the button to get the calculation result
+Loan & accomendation cost have a input part there I have use range sliders to just drag to the right amount that you need and when you have the right figures you click on the button to get the 
+calculation result
  
 
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+I then like to add a screenshot of each page of the site here, I used [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
 
 ### Future Implementations
 
@@ -113,7 +119,7 @@ I then like to add a screenshot of each page of the site here, i use [amirespons
 
    *Add login for members  
 
-   * More caculation of tax then you sell.
+   * More caculation of tax then the user shall sell their home.
 
    *Caculation of deferral
 
@@ -210,11 +216,11 @@ To clone the Loan & accomendation cost repository:
     *This is little of an stuggle during the whole process if I come up wiyh a new idea and change just a little thing it is just too start over with the adjustments until it is ok again - OK
 
 * Button test 
-    *hover over to se that the hover function is working - OK
-    *pres the caculate button to se that all calculation is working. - OK
+    *Hover over to se that the hover function is working - OK
+    *Pres the caculate button to se that all calculation is working. - OK
 * Range-slider
     * That was a struggle to make the them be still in one place at the beginign the whole slider moved a when I drag the handle to change the value. 
-    To fix that I needed to get a fiexed width on the slader and set position to responsive. Got this from Chat-GPT after the changes the slider doesn't move as much - A wished I got the time to fix this so it should be stil.
+    To fix that I needed to get a fixed width on the slider and set position to responsive. Got this from Chat-GPT after the changes the slider doesn't move as much - A wished I got the time to fix this so it should be stil.
 * Calculations 
     * Was a struggle before I remembered to use jshint do to that I had some small typos in the code and I thought I had done everything wrong so I done that code over and over again and ended up with one of the first code and just fixed the typo. -OK
     * Has struggle a lot to get the curreny after the values in both sections with some code in JS but i didn't make it due to time fly away. I ended up with another solution to write the currency in brackets after the label text. -OK but I am not satisfied.
@@ -226,6 +232,11 @@ I did validator testing for the page and got some errors:
 #### Wave 
  * For use the missing h1 header (from Wave)
     * Changed so the h2 became h1 and h3 became h2
+    
+All above actions fixed the errors see the before and after image.
+
+![contrast result at WAVE testing](doc/readme_images/wave.png)
+
 #### W3C_html_checker
  * Element link is missing one or more of attributes
     * It was for the favicon and I had forgoten to fill in rel and size with the right value
@@ -234,10 +245,11 @@ I did validator testing for the page and got some errors:
  * Stray endtag span
     * The start tag was  missing so I added that 
  * Garbage after </>
-    *here was some text that had goten to the wrong place so a removed that
+    *here was some text that had come to the wrong place so a removed that
 
     
-    ![Check the HTML code](doc/readme_images/w3c_html_checker.png)
+All above actions fixed the errors see the before and after image.
+ ![Check the HTML code](doc/readme_images/w3c_html_checker.png)
 
 #### Jigsaw_w3_CSS_code_checker
  *.container2: 1fr is not a flex value
@@ -254,6 +266,9 @@ I did validator testing for the page and got some errors:
 All above actions fixed the errors see the before and after image.
 
 ![Check the CSS code](doc/readme_images/jigsaw_w3_CSS_code_checker.png)
+
+
+
 All this Errors was easy to find and fix.
 
 ## Credits
