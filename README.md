@@ -239,29 +239,29 @@ All above actions fixed the errors see the before and after image.
 
 #### W3C_html_checker
  * Element link is missing one or more of attributes
-    * It was for the favicon and I had forgoten to fill in rel and size with the right value
+   * It was for the favicon and I had forgoten to fill in rel and size with the right value
  * Attribute size not allowed on element link 
-    *It was for the favicon and I had forgoten to fill in rel and size with the right value
+   * It was for the favicon and I had forgoten to fill in rel and size with the right value
  * Stray endtag span
-    * The start tag was  missing so I added that 
+   * The start tag was  missing so I added that 
  * Garbage after </>
-    *here was some text that had come to the wrong place so a removed that
+   * Here was some text that had come to the wrong place so a removed that
 
     
 All above actions fixed the errors see the before and after image.
  ![Check the HTML code](doc/readme_images/w3c_html_checker.png)
 
 #### Jigsaw_w3_CSS_code_checker
- *.container2: 1fr is not a flex value
-    *I changed it to 100% 
- * #calculator-btn:hover: 0.2 is not a transition value
-    * I removed the whole transition row.
- * #reset-btn:hover 0.2 is not a not a transition value
-    *I desided to to remove the reset button.
- * -webkit-apperance- is not a is not a known provider  of extension
-    I removed that line
+*  .container2: 1fr is not a flex value
+   * I changed it to 100% 
+* #calculator-btn:hover: 0.2 is not a transition value
+   * I removed the whole transition row.
+* #reset-btn:hover 0.2 is not a not a transition value
+   * I desided to to remove the reset button.
+* -webkit-apperance- is not a is not a known provider  of extension
+   * I removed that line
 * ::webkit-slider-thumb is not a known name of a vendor-specific pseudo-element
-    * I removed that line 
+   * I removed that line 
 
 All above actions fixed the errors see the before and after image.
 
@@ -279,7 +279,7 @@ All this Errors was easy to find and fix.
 
 I have writen all the code by my self with a little help from google and chat-gpt when the code didnt work as I expected.
 
-###  Acknowledgments
+### Acknowledgments
 
 My Code Intitute Mentor Gareth Mc Girr for all links and for the support.
 
